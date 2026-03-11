@@ -1,0 +1,22 @@
+.search-image-container {
+  display: flex;
+  flex-direction: column;
+  width:200px;
+  height:320px;
+
+  div:first-child {
+    margin-bottom: 5px;
+
+    img {
+      width: 200px;
+      height: 270px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+  div:last-child {
+    align-items: center;
+    color: var(--tt);
+    margin-bottom: 5px;
+  }
+}

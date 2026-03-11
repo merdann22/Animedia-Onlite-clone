@@ -1,0 +1,24 @@
+.anime-timer {
+  display: flex;
+  gap: 8px;
+  color: var(--tt);
+  font-family: "Circe", sans-serif;
+  font-weight: lighter;
+}
+
+.timer-badge {
+  font-size: 10px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timer-time {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+}
+.timer-time :first-child {
+  font-size: 42px;
+}/*# sourceMappingURL=animeTimer.css.map */

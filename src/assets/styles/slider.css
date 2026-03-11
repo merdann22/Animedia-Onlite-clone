@@ -1,0 +1,65 @@
+.simple-slider {
+  background-color: var(--bg1s);
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 0 77px;
+  border-radius: 10px;
+}
+.simple-slider .colors {
+  display: flex;
+  gap: 10px;
+  margin: 0 20px;
+  overflow: hidden;
+}
+.simple-slider .anime-slider-card {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.simple-slider .image-container {
+  width: 160px;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+.simple-slider .color-box {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.simple-slider .color-name {
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 8px;
+  color: white;
+  font-size: 12px;
+  text-align: start;
+}
+.simple-slider button {
+  position: absolute;
+  padding: 5px 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+.simple-slider button:first-child {
+  left: 10px;
+}
+.simple-slider button:last-child {
+  right: 10px;
+}
+.simple-slider button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=slider.css.map */

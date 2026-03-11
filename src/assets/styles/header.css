@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90px;
+}
+header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 auto;
+}
+header button {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 20px;
+  overflow: hidden;
+  background: none;
+}
+header .minimal-search {
+  background-color: var(--fltx);
+  border-radius: 10px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 5px 0 10px;
+  overflow: hidden;
+}
+header .dark-white-mode {
+  background-color: var(--bg1s);
+  color: white;
+}
+header .notice {
+  opacity: 0.5;
+  fill: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+header .notice:hover {
+  opacity: 0.7;
+}
+header .avaLogin {
+  position: absolute;
+  left: -15%;
+  top: -15%;
+  border-radius: 10px;
+  max-width: 130%;
+}
+header ul {
+  gap: 20px;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  list-style-type: none;
+}
+header .nav-link {
+  color: var(--tt);
+  font-weight: bold;
+  text-decoration: none;
+}
+header .nav-link:hover {
+  color: #00A0B0;
+}/*# sourceMappingURL=header.css.map */

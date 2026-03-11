@@ -1,0 +1,181 @@
+.grid-about {
+  display: grid;
+  width: 1440px;
+  grid-template-columns: 260px minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 0.25fr minmax(0, 1fr/4) 1fr minmax(0, 1fr/2);
+  grid-template-areas: "poster anime-name anime-name" "poster anime-info rating" "poster anime-info anime-time" "poster anime-info series" "poster anime-info series2";
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.grid-about .anime-poster-rating {
+  width: 100%;
+  grid-area: rating;
+  border-radius: 10px;
+}
+.grid-about .anime-poster-rating > div {
+  border-radius: 10px;
+  align-items: center;
+  font-size: 22px;
+  color: var(--tt);
+  width: 50%;
+  display: flex;
+  background-color: var(--fltx);
+}
+.grid-about .anime-poster-time {
+  display: flex;
+  grid-area: anime-time;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--fltx);
+  margin-bottom: 50px;
+}
+.grid-about .amine-poster-series {
+  grid-area: series;
+}
+.grid-about .amine-poster-series > div {
+  color: var(--tt);
+  font-size: 22px;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fltx);
+  border-radius: 10px;
+}
+.grid-about .amine-poster-series > div :first-child {
+  color: var(--tt-accent);
+}
+.grid-about .amine-poster-series > div :last-child:hover {
+  color: var(--tt-accent);
+}
+.grid-about .amine-series2 {
+  grid-area: serie2;
+}
+
+.grid-poster {
+  grid-area: poster;
+}
+.grid-poster .image-info-container {
+  width: 260px;
+  height: 380px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.grid-poster .image-info-container .eval-counter {
+  color: var(--tt);
+  height: 3rem;
+  display: flex;
+  gap: 1ch;
+  margin-bottom: 15px;
+}
+.grid-poster .image-info-container .eval-counter button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.grid-poster .image-info-container .eval-counter img {
+  width: 25px;
+  height: 25px;
+}
+.grid-poster .image-info-container .eval-counter .like {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.grid-poster .image-info-container .eval-counter .like > button {
+  background-color: #1e98c4;
+}
+.grid-poster .image-info-container .eval-counter .dislike {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.grid-poster .image-info-container .eval-counter .dislike > button {
+  background-color: #dd5161;
+  margin-right: 5px;
+}
+.grid-poster .image-info-container .eval-counter button {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+}
+.grid-poster .add_bookmarks {
+  background-color: var(--bg1s);
+  color: var(--tt);
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 10px;
+  height: 3rem;
+  cursor: pointer;
+}
+.grid-poster .add_bookmarks:hover {
+  background-color: var(--bg-btn-hover);
+}
+
+a {
+  color: var(--tt-accent);
+  text-decoration: none;
+}
+
+.anime-poster-info {
+  grid-area: anime-info;
+  display: flex;
+  gap: 10px;
+  color: var(--tt);
+  flex-direction: column;
+  font-size: 14px;
+  flex-shrink: 0;
+  padding-left: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.anime-poster-info > li {
+  display: flex;
+}
+.anime-poster-info .info__item {
+  flex-basis: 300px;
+}
+.anime-poster-info .info__value {
+  flex-basis: 300px;
+}
+
+.anime-poster-name {
+  color: var(--tt);
+  grid-area: anime-name;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.tags {
+  margin-bottom: 10px;
+}
+.tags > span {
+  margin: 0.1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--fltx);
+}
+.tags .tag:hover {
+  background-color: var(--bg1s);
+}
+
+.last-series {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--tt-accent);
+  opacity: 0.7;
+}
+
+.all-series {
+  font-size: 24px;
+  font-weight: bold;
+}/*# sourceMappingURL=animeInfo.css.map */

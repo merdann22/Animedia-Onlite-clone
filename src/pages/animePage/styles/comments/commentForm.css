@@ -1,0 +1,41 @@
+.comment-form {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.comment-form .comment-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444;
+  background: var(--tt);
+  color: #000000;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.comment-form .comment-textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.comment-form .comment-textarea::placeholder {
+  color: #888;
+}
+.comment-form .comment-submit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.comment-form .comment-submit-btn:hover:not(:disabled) {
+  background: #0056b3;
+}
+.comment-form .comment-submit-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=commentForm.css.map */

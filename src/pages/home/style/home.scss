@@ -1,0 +1,18 @@
+.about-sait {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
+  color: var(--tt);
+  border-radius: 10px;
+  background-color: var(--fltx);
+  margin-bottom: 60px;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    color: var(--tt-2);
+    line-height: 1.7;
+    margin: 15px 0;
+  }
+}

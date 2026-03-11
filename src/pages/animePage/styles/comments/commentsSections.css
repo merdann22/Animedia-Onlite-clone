@@ -1,0 +1,28 @@
+.comments-section {
+  display: flex;
+  flex-direction: column;
+}
+.comments-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--tt);
+}
+.comments-section .no-comment {
+  margin-bottom: 60px;
+  display: flex;
+  width: 100%;
+  color: #ccc;
+  border: 2px solid orange;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.comments-section .no-comment div:first-child {
+  width: 40px;
+  background: orange;
+}
+.comments-section .no-comment div:last-child {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=commentsSections.css.map */

@@ -1,0 +1,49 @@
+footer {
+  background-color: var(--bg1s);
+  border-radius: 10px;
+  font-size: 13px;
+  padding: 20px 30px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+footer > div:first-child > div:first-child a {
+  color: white;
+  margin-right: 40px;
+}
+footer > div:first-child > div:first-child > :hover {
+  text-decoration: underline;
+}
+footer > div:first-child > div:first-child a:last-child {
+  font-weight: bold;
+}
+footer > div:first-child > div:last-child {
+  color: var(--tt-2);
+}
+footer > div:last-child {
+  gap: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+footer > div:last-child > div:first-child {
+  color: var(--tt-2);
+}
+footer > div:last-child > div:last-child {
+  display: flex;
+}
+footer > div:last-child > div:last-child img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+footer > div:last-child > div:last-child div {
+  width: 30px;
+  height: 20px;
+  background-color: white;
+}/*# sourceMappingURL=footer.css.map */

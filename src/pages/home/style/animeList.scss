@@ -1,0 +1,30 @@
+.anime-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .anime-list-button {
+    .active {
+      background: var(--bg1s);
+      color: var(--tt);
+    }
+    button {
+      margin: 20px 7px;
+      border-radius: 5px;
+      padding: 8px 13px;
+
+      &:hover {
+        background-color: var(--bg1s);
+        color: var(--tt);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+  .anime-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}

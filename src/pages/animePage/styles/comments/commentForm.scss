@@ -1,0 +1,47 @@
+// commentForm.scss
+
+.comment-form {
+  margin-bottom: 30px;
+  width: 100%;
+
+  .comment-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    background: var(--tt);
+    color: #000000;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    &::placeholder {
+      color: #888;
+    }
+  }
+
+  .comment-submit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+
+    &:hover:not(:disabled) {
+      background: #0056b3;
+    }
+
+    &:disabled {
+      background: #555;
+      cursor: not-allowed;
+    }
+  }
+}

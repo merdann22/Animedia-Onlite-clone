@@ -1,0 +1,75 @@
+.simple-slider {
+  background-color: var(--bg1s);
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 0 77px;
+  border-radius: 10px;
+
+  .colors {
+    display: flex;
+    gap: 10px;
+    margin: 0 20px;
+    overflow: hidden;
+  }
+
+  .anime-slider-card {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .image-container {
+    width: 160px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    overflow: hidden; // Обрезает только изображение
+  }
+
+  .color-box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .color-name {
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 8px;
+    color: white;
+    font-size: 12px;
+    text-align: start;
+  }
+
+  button {
+    position: absolute;
+    padding: 5px 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.0);
+
+
+    &:first-child {
+      left: 10px;
+    }
+
+    &:last-child {
+      right: 10px;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

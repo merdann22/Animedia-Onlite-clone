@@ -1,0 +1,89 @@
+.container {
+  display: grid;
+  gap: 20px;
+  margin-inline: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  grid-template-columns: repeat(auto-fill) minmax(180px, 1fr);
+  grid-template-rows: 200px repeat(auto-fill, minmax(180px, 1fr)) 50px;
+  grid-template-areas: "S S S S" "M M M M" "L L L L";
+}
+
+.start-search {
+  grid-area: S;
+  margin: 20px auto;
+  width: 90%;
+}
+.start-search .search-results-count {
+  color: var(--tt);
+  font-size: 14px;
+}
+.start-search .search-page-form {
+  margin-top: 10px;
+}
+
+.search-page-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.search-page-input .search-page-input-text {
+  background-color: var(--fltx);
+  color: var(--tt);
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 20px;
+}
+.search-page-input .add_bookmarks {
+  background-color: var(--bg1s);
+  color: var(--tt);
+  margin-top: 10px;
+  font-size: 14px;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.search-page-input .add_bookmarks:hover {
+  background-color: var(--bg-btn-hover);
+}
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
+  gap: 20px;
+  grid-area: M;
+}
+
+.load-more-container {
+  margin: auto;
+  grid-area: L;
+}
+.load-more-container * {
+  margin: 0 5px;
+  color: var(--tt);
+  background-color: var(--fltx);
+  border-radius: 5px;
+  padding: 8px 13px;
+  cursor: pointer;
+}
+.load-more-container *:hover {
+  background-color: var(--bg1s);
+}
+.load-more-container *.active {
+  background-color: var(--bg1s);
+  color: var(--tt);
+  font-weight: bold;
+}
+.load-more-container *:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.load-more-container *:disabled:hover, .load-more-container *:disabled:active {
+  background-color: var(--fltx);
+}
+
+/*# sourceMappingURL=searchPage.css.map */

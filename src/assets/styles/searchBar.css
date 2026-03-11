@@ -1,0 +1,22 @@
+.minimal-search {
+  position: relative;
+}
+.minimal-search .search-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--fltx);
+  color: var(--tt);
+  font-size: 14px;
+  outline: none;
+}
+.minimal-search .search-submit {
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  background: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=searchBar.css.map */
