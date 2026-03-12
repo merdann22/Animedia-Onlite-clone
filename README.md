@@ -5,7 +5,6 @@
 [![React](https://img.shields.io/badge/React-18.2.0-61dafb?style=flat-square&logo=react)](https://reactjs.org/)
 [![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?style=flat-square&logo=react-router)](https://reactrouter.com/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=flat-square&logo=javascript)](https://developer.mozilla.org/ru/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 ## 📋 Содержание
 
