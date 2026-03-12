@@ -77,13 +77,14 @@ Animedia-Onlite-clone — это одностраничное приложени
 
 ## 📸 Скриншоты
 
-| Файл | Страница | Маршрут |
-|------|----------|---------|
-| `home-page.png` | Главная страница | `/` |
-| `anime-page.png` | Страница аниме | `/anime/1` |
-| `login-page.png` | Страница входа | `/login` |
-| `profile-page.png` | Страница профиля | `/profile` |
-| `search-page.png` | Страница поиска | `/search` |
+| Файл         | Страница             | Маршрут |
+|--------------|----------------------|---------|
+| `home-page.png` | Главная страница     | `/` |
+| `anime-page.png` | Страница аниме       | `/anime/1` |
+| `login-page.png` | Страница входа       | `/login` |
+| `profile-page.png` | Страница профиля     | `/profile` |
+| `registration-page.png`  | Страница регистрации | `/registration` |
+| `search-page.png` | Страница поиска      | `/search` |
 
 ## 🔮 Планы по развитию
 
