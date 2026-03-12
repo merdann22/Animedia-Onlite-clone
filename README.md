@@ -95,5 +95,5 @@ Animedia-Onlite-clone — это одностраничное приложени
 
 ## 🔮 Контакты
 
-Автор: merdann22
-telegram: t.me/nikitavar
+- Автор: merdann22 
+- Telegram: [@nikitavar](https://t.me/nikitavar)
