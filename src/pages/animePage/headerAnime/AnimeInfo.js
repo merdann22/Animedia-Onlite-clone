@@ -3,8 +3,6 @@ import React from "react";
 import logo from '../../../assets/images/logo192.png';
 import '../styles/header-anime/animeInfo.css';
 import AnimeTimer from "../../../components/AnimeTimer";
-import DescriptionAnime from "./DescriptionAnime";
-import ScoreList from "./ScoreList";
 
 const AnimeInfo = ({ anime }) => {
     if (!anime) return <div>Данные не найдены</div>;
@@ -132,9 +130,6 @@ const AnimeInfo = ({ anime }) => {
                     </li>
                 </ul>
             </section>
-            <ScoreList anime={anime}/>
-            <DescriptionAnime anime={anime}/>
-
         </div>
     );
 };

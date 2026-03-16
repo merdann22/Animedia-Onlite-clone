@@ -1,8 +1,13 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  font-size: 14px;
   height: 90px;
+}
+header ul {
+  display: flex;
+  align-items: center;
 }
 header__actions {
   display: flex;
@@ -63,4 +68,6 @@ header .nav-link {
 }
 header .nav-link:hover {
   color: #00A0B0;
-}/*# sourceMappingURL=header.css.map */
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -7,13 +7,16 @@ import SearchBar from "../pages/searchPage/SearchBar"; // Импортируем
 export default function Header() {
     return (
         <header>
-            <NavLink to="/" className={({isActive}) =>
-                isActive ? "nav-link active" : "nav-link"}>
-                <img src={logo} width={200} style={{marginTop: 5}} alt="logo"/>
-            </NavLink>
 
-            <nav className="header__nav">
-                <ul className="header__nav-list flex-grow-1">
+
+            <nav className="header__nav" >
+                <ul className="header__nav-list flex-grow-1" style={{display: 'flex'}}>
+                    <li>
+                        <NavLink style={{}} to="/" className={({isActive}) =>
+                            isActive ? "nav-link active" : "nav-link"}>
+                            <img src={logo} width={170} style={{marginTop: 5}} alt="logo"/>
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink to="/products" className={({isActive}) =>
                             isActive ? "nav-link active" : "nav-link"}>

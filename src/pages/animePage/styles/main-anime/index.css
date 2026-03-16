@@ -1,0 +1,10 @@
+.anime-play-video {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+.anime-play-video h2 {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

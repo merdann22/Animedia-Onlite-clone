@@ -1,0 +1,13 @@
+.anime-sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anime-sidebar .anime-sidebar-container {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=anime-sidebar.css.map */

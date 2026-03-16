@@ -3,6 +3,7 @@
 body {
 
   background-color: var(--bg-2);
+    padding:0 40px;
   margin: 0;
   font-family: 'Gotham Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,6 +56,7 @@ ul{
     --ui-bg-accent: #0b161f;
     --ui-text-color-on-accent: #fff;
     --ui-bdc: #11212e;
+    --animli: #676767;
 
 }
 

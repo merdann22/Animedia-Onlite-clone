@@ -1,0 +1,10 @@
+.anime-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anime-video div {
+  background-color: black;
+}
+
+/*# sourceMappingURL=anime-video.css.map */

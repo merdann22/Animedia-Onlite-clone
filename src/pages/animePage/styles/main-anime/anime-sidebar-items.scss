@@ -1,0 +1,78 @@
+.anime-sidebar-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  background-color: var(--fltx);
+  border-radius: 10px;
+  color: var(--tt);
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .sidebar-item-container {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+  }
+
+  .sidebar-item-series {
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+
+    flex-direction: column;
+
+    span:first-child {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--tt-accent);
+      opacity: 0.6;
+      line-height: 32px;
+    }
+
+    span:last-child {
+      font-size: 13px;
+      color: var(--tt-2);
+    }
+  }
+
+  .anime-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .sidebar-item-info {
+    display: grid;
+    grid-template-columns:  auto 20%;
+    width: 100%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    left: 0;
+    align-items: center;
+
+    .sidebar-item-title {
+      display: flex;
+      width: 90%;
+      max-width: 100%;
+      align-items: start;
+      color: var(--tt);
+      flex-direction: column;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      p:first-child {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      p:last-child {
+        font-size: 13px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

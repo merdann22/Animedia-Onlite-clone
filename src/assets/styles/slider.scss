@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   padding: 20px;
-  margin: 0 77px;
   border-radius: 10px;
 
   .colors {
@@ -16,16 +15,16 @@
   }
 
   .anime-slider-card {
-    width: 160px;
+    width: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-shrink: 0;
   }
 
-  .image-container {
-    width: 160px;
-    height: 250px;
+  .image-container {фцв
+    width: 170px;
+    height: 230px;
     border-radius: 10px;
     border: 2px solid #333;
     overflow: hidden; // Обрезает только изображение
@@ -36,6 +35,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: filter 0.5s ease-in-out;
+
+    &:hover {
+      filter: saturate(300%);
+    }
   }
 
   .color-name {

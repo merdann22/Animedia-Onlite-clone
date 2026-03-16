@@ -3,6 +3,9 @@ import { useParams } from 'react-router-dom';
 import AnimeInfo from './headerAnime/AnimeInfo';
 import { getAnimeById } from '../../jikanClient';
 import CommentsAnime from "./comments";
+import ScoreList from "./headerAnime/ScoreList";
+import DescriptionAnime from "./headerAnime/DescriptionAnime";
+import AnimePlayVideo from "./mainAnime";
 
 const AnimePage = () => {
     const { id } = useParams();
@@ -44,7 +47,11 @@ const AnimePage = () => {
 
     return <div>
         <AnimeInfo anime={anime}/>
+        <ScoreList anime={anime}/>
+        <DescriptionAnime anime={anime}/>
+        <AnimePlayVideo anime={anime}/>
         <CommentsAnime animeId={anime.mal_id}/>
+
     </div>
 };
 
