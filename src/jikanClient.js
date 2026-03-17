@@ -157,6 +157,7 @@ export const getAnimeSchedule = async (day = 'monday', limit = 6) => {
  * @param {number} id - ID аниме
  * @returns {Promise<Array>} - Массив видео с YouTube ID, названием и превью
  */
+
 export const getAnimeVideos = async (id) => {
     try {
         const response = await fetch(`${API_BASE_URL}/anime/${id}/videos`);
@@ -186,6 +187,7 @@ export const getAnimeVideos = async (id) => {
  * @param {number} page - Номер страницы
  * @returns {Promise<Object>} - Объект с массивом эпизодов и пагинацией
  */
+
 export const getAnimeEpisodes = async (id, page = 1) => {
     try {
         const response = await fetch(
@@ -213,6 +215,7 @@ export const getAnimeEpisodes = async (id, page = 1) => {
  * @param {number} episodeId - ID эпизода
  * @returns {Promise<Object>} - Детальная информация об эпизоде
  */
+
 export const getAnimeEpisodeById = async (animeId, episodeId) => {
     try {
         const response = await fetch(
@@ -237,6 +240,7 @@ export const getAnimeEpisodeById = async (animeId, episodeId) => {
  * @param {number} id - ID аниме
  * @returns {Promise<Array>} - Массив внешних ссылок
  */
+
 export const getAnimeExternalLinks = async (id) => {
     try {
         const response = await fetch(`${API_BASE_URL}/anime/${id}/external`);
@@ -258,6 +262,7 @@ export const getAnimeExternalLinks = async (id) => {
  * @param {number} id - ID аниме
  * @returns {Promise<Object>} - Статистика аниме
  */
+
 export const getAnimeStatistics = async (id) => {
     try {
         const response = await fetch(`${API_BASE_URL}/anime/${id}/statistics`);
@@ -279,6 +284,7 @@ export const getAnimeStatistics = async (id) => {
  * @param {number} id - ID аниме
  * @returns {Promise<Array>} - Массив рекомендаций
  */
+
 export const getAnimeRecommendations = async (id) => {
     try {
         const response = await fetch(`${API_BASE_URL}/anime/${id}/recommendations`);

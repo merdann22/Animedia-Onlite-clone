@@ -1,10 +1,42 @@
 // animePlay/AnimePlay.js
-const AnimePlay = ({ videoUrl, currentEpisode, anime, episodes}) => {
+import { useState } from 'react';
+import AnimeSeries from './AnimeSeries';
+
+const AnimePlay = ({ videoUrl, currentEpisode, anime, episodes, onEpisodeChange }) => {
+    const [showSeries, setShowSeries] = useState(true);
+
+    if (!videoUrl) {
+        return (
+            <div>
+                <h2>{anime?.title}</h2>
+                <button onClick={() => setShowSeries(!showSeries)}>
+                    {showSeries ? 'Скрыть серии' : 'Все серии'}
+                </button>
+                <p>Видео не доступно</p>
+                {showSeries && (
+                    <AnimeSeries
+                        episodes={episodes}
+                        currentEpisode={currentEpisode}
+                        onEpisodeSelect={(episode) => {
+                            onEpisodeChange(episode);
+                            setShowSeries(false);
+                        }}
+                    />
+                )}
+            </div>
+        );
+    }
+
+    const episodeNumber = currentEpisode?.episode_id || currentEpisode?.mal_id || '1';
+
     return (
-        <div  style={{ position: 'relative', width: '100%', height: '100%'}}>
-                <h2 style={{position: "absolute", top: '15px', left: '15px'}}>
-                    {anime.title}, {episodes.id} серия </h2>
-            {/* Видео плеер (встраиваем YouTube если это YouTube ссылка) */}
+        <div>
+            <h2>{anime?.title}, {episodeNumber} серия</h2>
+
+            <button onClick={() => setShowSeries(!showSeries)}>
+                {showSeries ? 'Скрыть серии' : 'Все серии'}
+            </button>
+
             {videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be') ? (
                 <iframe
                     width="100%"
@@ -13,23 +45,31 @@ const AnimePlay = ({ videoUrl, currentEpisode, anime, episodes}) => {
                     title={currentEpisode?.title || 'Anime video'}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    style={{
-                        aspectRatio: '16/10',
-                        width: '100%'
-                    }}
+                    key={videoUrl}
                 />
             ) : (
                 <video
                     controls
-                    style={{
-                        width: '100%',
-                        aspectRatio: '16/10',
-                        backgroundColor: '#000'
-                    }}
+                    key={videoUrl}
+                    width="100%"
+                    height="600"
                 >
                     <source src={videoUrl} type="video/mp4" />
-                    Ваш браузер не поддерживает видео тег.
                 </video>
+            )}
+
+            {showSeries && (
+                <div>
+                    <h3>Список серий ({episodes.length})</h3>
+                    <AnimeSeries
+                        episodes={episodes}
+                        currentEpisode={currentEpisode}
+                        onEpisodeSelect={(episode) => {
+                            onEpisodeChange(episode);
+                            setShowSeries(false);
+                        }}
+                    />
+                </div>
             )}
         </div>
     );

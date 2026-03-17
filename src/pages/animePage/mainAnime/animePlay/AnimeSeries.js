@@ -1,6 +1,7 @@
 import '../../styles/main-anime/anime-series.css'
 
-const AnimeSeries = ({ episodes, currentEpisode, onEpisodeSelect,  onNextEpisode, hasNextEpisode}) => {
+const AnimeSeries = ({ episodes, currentEpisode, onEpisodeSelect,  onNextEpisode, episodeNumber}) => {
+
     if (!episodes || episodes.length === 0) {
         return (
             <div >
@@ -9,11 +10,12 @@ const AnimeSeries = ({ episodes, currentEpisode, onEpisodeSelect,  onNextEpisode
         );
     }
 
+
     return (
         <div className="anime-series-container">
             <div className="anime-series-now-episodes">
                     <button onClick={onNextEpisode}>
-                        {episodes.id}Следующая серия
+                        Следующая серия
                     </button>
 
                 {currentEpisode?.episode_id && (
